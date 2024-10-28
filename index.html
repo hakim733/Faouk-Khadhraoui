@@ -14,23 +14,28 @@
             font-family: Arial, sans-serif;
             color: #333;
             line-height: 1.6;
+            background-color: #f9f9f9;
         }
         header {
-            background: #004466;
+            background: #003350;
             color: white;
-            padding: 20px;
+            padding: 30px 0;
             text-align: center;
         }
         header img {
-            max-width: 100px;
-            margin-bottom: 10px;
+            max-width: 120px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
         }
         header h1 {
-            font-size: 2em;
-            margin: 10px 0;
+            font-size: 2.5em;
+            margin: 15px 0;
         }
         header p {
             font-size: 1.2em;
+            max-width: 800px;
+            margin: auto;
         }
         .container {
             max-width: 1200px;
@@ -38,33 +43,40 @@
             padding: 20px;
         }
         .services, .contact {
-            margin: 40px 0;
+            margin: 50px 0;
         }
         .services h2, .contact h2 {
-            font-size: 2em;
-            color: #004466;
-            margin-bottom: 20px;
+            font-size: 2.2em;
+            color: #003350;
+            margin-bottom: 25px;
             text-align: center;
         }
         .service-item {
             display: flex;
             align-items: center;
-            padding: 20px;
-            background: #f0f0f0;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            transition: background 0.3s;
+            padding: 25px;
+            background: #f1f1f1;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .service-item:hover {
-            background: #e0e0e0;
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .service-item img {
-            max-width: 60px;
-            margin-right: 20px;
+            max-width: 80px;
+            margin-right: 25px;
+            transition: transform 0.3s;
+        }
+        .service-item img:hover {
+            transform: rotate(-5deg);
         }
         .service-item h3 {
-            font-size: 1.5em;
+            font-size: 1.7em;
             color: #333;
+            margin-bottom: 5px;
         }
         .service-item p {
             font-size: 1em;
@@ -72,29 +84,36 @@
         }
         .contact-info {
             text-align: center;
-            font-size: 1.2em;
-            margin-top: 20px;
+            font-size: 1.3em;
+            margin-top: 25px;
         }
         .contact-info p {
-            margin: 10px 0;
+            margin: 12px 0;
+        }
+        .contact-info a {
+            color: #003350;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
         .footer {
-            background: #004466;
+            background: #003350;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
         }
         .footer p {
             font-size: 0.9em;
         }
-        /* Responsive */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .service-item {
                 flex-direction: column;
                 text-align: center;
             }
             .service-item img {
-                margin: 0 0 10px 0;
+                margin: 0 0 15px 0;
             }
         }
     </style>
@@ -118,7 +137,7 @@
                 </div>
             </div>
             <div class="service-item">
-                <img src="https://img.icons8.com/ios-filled/50/000000/under-construction.png" alt="Construction">
+                <img src="https://img.icons8.com/ios-filled/80/000000/under-construction.png" alt="Construction">
                 <div>
                     <h3>Construction</h3>
                     <p>Nous réalisons des projets de construction du début à la fin, que ce soit pour des bâtiments résidentiels ou commerciaux. Notre engagement envers la qualité, la sécurité, et les délais garantit des résultats conformes aux attentes de nos clients à Toulouse et dans ses environs.</p>
